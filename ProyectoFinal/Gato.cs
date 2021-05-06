@@ -277,5 +277,27 @@ namespace ProyectoFinal
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void nuevoJuegoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            who = 'X';
+            mov = 0;
+            button1.Enabled = true; button1.Text = " "; button1.BackColor = Color.Gray;
+            button2.Enabled = true; button2.Text = " "; button2.BackColor = Color.Gray;
+            button3.Enabled = true; button3.Text = " "; button3.BackColor = Color.Gray;
+            button4.Enabled = true; button4.Text = " "; button4.BackColor = Color.Gray;
+            button5.Enabled = true; button5.Text = " "; button5.BackColor = Color.Gray;
+            button6.Enabled = true; button6.Text = " "; button6.BackColor = Color.Gray;
+            button7.Enabled = true; button7.Text = " "; button7.BackColor = Color.Gray;
+            button8.Enabled = true; button8.Text = " "; button8.BackColor = Color.Gray;
+            button9.Enabled = true; button9.Text = " "; button9.BackColor = Color.Gray;
+            tableLayoutPanel1.Enabled = true;
+
+        }
+
+        private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
