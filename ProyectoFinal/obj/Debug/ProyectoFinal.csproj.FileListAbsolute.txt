@@ -8,3 +8,4 @@ c:\users\susana m\documents\visual studio 2012\Projects\ProyectoFinal\ProyectoFi
 c:\users\susana m\documents\visual studio 2012\Projects\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache
 c:\users\susana m\documents\visual studio 2012\Projects\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.exe
 c:\users\susana m\documents\visual studio 2012\Projects\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+c:\users\susana m\documents\visual studio 2012\Projects\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Gato.resources

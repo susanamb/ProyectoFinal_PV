@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ahorcadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snakeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verScoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,12 +58,41 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem,
+            this.verUsuariosToolStripMenuItem,
+            this.editarUsuarioToolStripMenuItem});
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // nuevoToolStripMenuItem
+            // 
+            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            // 
+            // verUsuariosToolStripMenuItem
+            // 
+            this.verUsuariosToolStripMenuItem.Name = "verUsuariosToolStripMenuItem";
+            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.verUsuariosToolStripMenuItem.Text = "Ver usuarios";
+            // 
+            // editarUsuarioToolStripMenuItem
+            // 
+            this.editarUsuarioToolStripMenuItem.Name = "editarUsuarioToolStripMenuItem";
+            this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.editarUsuarioToolStripMenuItem.Text = "Editar usuario";
+            // 
             // juegosToolStripMenuItem
             // 
             this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ahorcadoToolStripMenuItem,
             this.memoriaToolStripMenuItem,
-            this.snakeToolStripMenuItem});
+            this.snakeToolStripMenuItem,
+            this.gatoToolStripMenuItem});
             this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
             this.juegosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.juegosToolStripMenuItem.Text = "Juegos";
@@ -86,28 +116,6 @@
             this.snakeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.snakeToolStripMenuItem.Text = "Snake";
             // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoToolStripMenuItem,
-            this.verUsuariosToolStripMenuItem,
-            this.editarUsuarioToolStripMenuItem});
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.usuariosToolStripMenuItem.Text = "Usuarios";
-            // 
-            // nuevoToolStripMenuItem
-            // 
-            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.nuevoToolStripMenuItem.Text = "Nuevo";
-            // 
-            // verUsuariosToolStripMenuItem
-            // 
-            this.verUsuariosToolStripMenuItem.Name = "verUsuariosToolStripMenuItem";
-            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.verUsuariosToolStripMenuItem.Text = "Ver usuarios";
-            // 
             // scoresToolStripMenuItem
             // 
             this.scoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -119,20 +127,21 @@
             // verScoresToolStripMenuItem
             // 
             this.verScoresToolStripMenuItem.Name = "verScoresToolStripMenuItem";
-            this.verScoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verScoresToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.verScoresToolStripMenuItem.Text = "Ver scores";
-            // 
-            // editarUsuarioToolStripMenuItem
-            // 
-            this.editarUsuarioToolStripMenuItem.Name = "editarUsuarioToolStripMenuItem";
-            this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editarUsuarioToolStripMenuItem.Text = "Editar usuario";
             // 
             // ventanaToolStripMenuItem
             // 
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
             this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.ventanaToolStripMenuItem.Text = "Ventana";
+            // 
+            // gatoToolStripMenuItem
+            // 
+            this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
+            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.gatoToolStripMenuItem.Text = "Gato";
+            this.gatoToolStripMenuItem.Click += new System.EventHandler(this.gatoToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -166,6 +175,7 @@
         private System.Windows.Forms.ToolStripMenuItem scoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verScoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventanaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem;
     }
 }
 
