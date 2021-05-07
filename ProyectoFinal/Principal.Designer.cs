@@ -37,10 +37,10 @@
             this.ahorcadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snakeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verScoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,19 +71,19 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             // 
             // verUsuariosToolStripMenuItem
             // 
             this.verUsuariosToolStripMenuItem.Name = "verUsuariosToolStripMenuItem";
-            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.verUsuariosToolStripMenuItem.Text = "Ver usuarios";
             // 
             // editarUsuarioToolStripMenuItem
             // 
             this.editarUsuarioToolStripMenuItem.Name = "editarUsuarioToolStripMenuItem";
-            this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editarUsuarioToolStripMenuItem.Text = "Editar usuario";
             // 
             // juegosToolStripMenuItem
@@ -100,48 +100,48 @@
             // ahorcadoToolStripMenuItem
             // 
             this.ahorcadoToolStripMenuItem.Name = "ahorcadoToolStripMenuItem";
-            this.ahorcadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ahorcadoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.ahorcadoToolStripMenuItem.Text = "Ahorcado";
             this.ahorcadoToolStripMenuItem.Click += new System.EventHandler(this.ahorcadoToolStripMenuItem_Click);
             // 
             // memoriaToolStripMenuItem
             // 
             this.memoriaToolStripMenuItem.Name = "memoriaToolStripMenuItem";
-            this.memoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.memoriaToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.memoriaToolStripMenuItem.Text = "Memoria";
             // 
             // snakeToolStripMenuItem
             // 
             this.snakeToolStripMenuItem.Name = "snakeToolStripMenuItem";
-            this.snakeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.snakeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.snakeToolStripMenuItem.Text = "Snake";
+            // 
+            // gatoToolStripMenuItem
+            // 
+            this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
+            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.gatoToolStripMenuItem.Text = "Gato";
+            this.gatoToolStripMenuItem.Click += new System.EventHandler(this.gatoToolStripMenuItem_Click);
             // 
             // scoresToolStripMenuItem
             // 
             this.scoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.verScoresToolStripMenuItem});
             this.scoresToolStripMenuItem.Name = "scoresToolStripMenuItem";
-            this.scoresToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.scoresToolStripMenuItem.Text = "Scores";
+            this.scoresToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.scoresToolStripMenuItem.Text = "Puntajes";
             // 
             // verScoresToolStripMenuItem
             // 
             this.verScoresToolStripMenuItem.Name = "verScoresToolStripMenuItem";
-            this.verScoresToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.verScoresToolStripMenuItem.Text = "Ver scores";
+            this.verScoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verScoresToolStripMenuItem.Text = "Ver puntajes";
             // 
             // ventanaToolStripMenuItem
             // 
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
             this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.ventanaToolStripMenuItem.Text = "Ventana";
-            // 
-            // gatoToolStripMenuItem
-            // 
-            this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
-            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gatoToolStripMenuItem.Text = "Gato";
-            this.gatoToolStripMenuItem.Click += new System.EventHandler(this.gatoToolStripMenuItem_Click);
             // 
             // Principal
             // 

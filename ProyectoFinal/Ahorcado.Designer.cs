@@ -417,6 +417,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
             // 
             // pictureBox2
             // 
@@ -427,6 +428,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // pictureBox6
             // 
@@ -437,6 +439,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 33;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
             // 
             // pictureBox1
             // 
@@ -447,6 +450,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // pictureBox3
             // 
@@ -457,6 +461,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // pictureBox0
             // 
@@ -477,6 +482,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 35;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
             // 
             // button28
             // 
@@ -544,7 +550,7 @@
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
-            // Form2
+            // Ahorcado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -591,7 +597,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Ahorcado";
             this.Text = "Ahorcado";
-            //this.Load += new System.EventHandler(this.Ahorcado);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
