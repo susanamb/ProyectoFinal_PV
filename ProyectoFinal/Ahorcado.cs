@@ -95,6 +95,7 @@ namespace ProyectoFinal
             int num = random.Next(words.Length);
             string palabra = words[num];
             label2.Text = palabra;
+            label2.Visible = false;
             char[] word = palabra.ToCharArray();
 
 
@@ -740,6 +741,11 @@ namespace ProyectoFinal
 
             label1.Text = string.Join(" ", lnes);
             button28.Visible = false;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
