@@ -71,19 +71,19 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             // 
             // verUsuariosToolStripMenuItem
             // 
             this.verUsuariosToolStripMenuItem.Name = "verUsuariosToolStripMenuItem";
-            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.verUsuariosToolStripMenuItem.Text = "Ver usuarios";
             // 
             // editarUsuarioToolStripMenuItem
             // 
             this.editarUsuarioToolStripMenuItem.Name = "editarUsuarioToolStripMenuItem";
-            this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.editarUsuarioToolStripMenuItem.Text = "Editar usuario";
             // 
             // juegosToolStripMenuItem
@@ -100,26 +100,27 @@
             // ahorcadoToolStripMenuItem
             // 
             this.ahorcadoToolStripMenuItem.Name = "ahorcadoToolStripMenuItem";
-            this.ahorcadoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.ahorcadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ahorcadoToolStripMenuItem.Text = "Ahorcado";
             this.ahorcadoToolStripMenuItem.Click += new System.EventHandler(this.ahorcadoToolStripMenuItem_Click);
             // 
             // memoriaToolStripMenuItem
             // 
             this.memoriaToolStripMenuItem.Name = "memoriaToolStripMenuItem";
-            this.memoriaToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.memoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.memoriaToolStripMenuItem.Text = "Memoria";
+            this.memoriaToolStripMenuItem.Click += new System.EventHandler(this.memoriaToolStripMenuItem_Click);
             // 
             // snakeToolStripMenuItem
             // 
             this.snakeToolStripMenuItem.Name = "snakeToolStripMenuItem";
-            this.snakeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.snakeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.snakeToolStripMenuItem.Text = "Snake";
             // 
             // gatoToolStripMenuItem
             // 
             this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
-            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.gatoToolStripMenuItem.Text = "Gato";
             this.gatoToolStripMenuItem.Click += new System.EventHandler(this.gatoToolStripMenuItem_Click);
             // 
