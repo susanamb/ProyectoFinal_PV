@@ -49,5 +49,23 @@ namespace ProyectoFinal
             this.Close();
         }
 
+        private void piedraPapelTijeraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ppt form2 = new ppt();
+            form2.Text = "Piedra Papel Tijera";
+            form2.WindowState = FormWindowState.Normal;
+            form2.MdiParent = this;
+            form2.Show();
+        }
+
+        private void piedraPapelTijeraToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ppt form2 = new ppt();
+            form2.Text = "Piedra Papel Tijera";
+            form2.WindowState = FormWindowState.Normal;
+            form2.MdiParent = this;
+            form2.Show();
+        }
+
     }
 }

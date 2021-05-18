@@ -62,6 +62,12 @@
     <Compile Include="Memoria.Designer.cs">
       <DependentUpon>Memoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="ppt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ppt.Designer.cs">
+      <DependentUpon>ppt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Memoria.resx">
       <DependentUpon>Memoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ppt.resx">
+      <DependentUpon>ppt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -116,6 +125,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tijera.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

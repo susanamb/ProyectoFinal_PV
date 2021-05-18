@@ -37,13 +37,17 @@
             this.unJugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ahorcadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.memoriaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.piedraPapelTijeraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dosJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gatoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.piedraPapelTijeraToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.scoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verScoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -56,7 +60,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.MdiWindowListItem = this.ventanaToolStripMenuItem;
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(886, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(927, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -101,39 +105,55 @@
             // 
             this.unJugadorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ahorcadoToolStripMenuItem1,
-            this.memoriaToolStripMenuItem1});
+            this.memoriaToolStripMenuItem1,
+            this.piedraPapelTijeraToolStripMenuItem});
             this.unJugadorToolStripMenuItem.Name = "unJugadorToolStripMenuItem";
-            this.unJugadorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unJugadorToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.unJugadorToolStripMenuItem.Text = "Un jugador";
             // 
             // ahorcadoToolStripMenuItem1
             // 
             this.ahorcadoToolStripMenuItem1.Name = "ahorcadoToolStripMenuItem1";
-            this.ahorcadoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ahorcadoToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.ahorcadoToolStripMenuItem1.Text = "Ahorcado";
             this.ahorcadoToolStripMenuItem1.Click += new System.EventHandler(this.ahorcadoToolStripMenuItem1_Click);
             // 
             // memoriaToolStripMenuItem1
             // 
             this.memoriaToolStripMenuItem1.Name = "memoriaToolStripMenuItem1";
-            this.memoriaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.memoriaToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.memoriaToolStripMenuItem1.Text = "Memoria";
             this.memoriaToolStripMenuItem1.Click += new System.EventHandler(this.memoriaToolStripMenuItem1_Click);
+            // 
+            // piedraPapelTijeraToolStripMenuItem
+            // 
+            this.piedraPapelTijeraToolStripMenuItem.Name = "piedraPapelTijeraToolStripMenuItem";
+            this.piedraPapelTijeraToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.piedraPapelTijeraToolStripMenuItem.Text = "Piedra Papel Tijera";
+            this.piedraPapelTijeraToolStripMenuItem.Click += new System.EventHandler(this.piedraPapelTijeraToolStripMenuItem_Click);
             // 
             // dosJugadoresToolStripMenuItem
             // 
             this.dosJugadoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gatoToolStripMenuItem1});
+            this.gatoToolStripMenuItem1,
+            this.piedraPapelTijeraToolStripMenuItem1});
             this.dosJugadoresToolStripMenuItem.Name = "dosJugadoresToolStripMenuItem";
-            this.dosJugadoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dosJugadoresToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.dosJugadoresToolStripMenuItem.Text = "Dos jugadores";
             // 
             // gatoToolStripMenuItem1
             // 
             this.gatoToolStripMenuItem1.Name = "gatoToolStripMenuItem1";
-            this.gatoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.gatoToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.gatoToolStripMenuItem1.Text = "Gato";
             this.gatoToolStripMenuItem1.Click += new System.EventHandler(this.gatoToolStripMenuItem1_Click);
+            // 
+            // piedraPapelTijeraToolStripMenuItem1
+            // 
+            this.piedraPapelTijeraToolStripMenuItem1.Name = "piedraPapelTijeraToolStripMenuItem1";
+            this.piedraPapelTijeraToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.piedraPapelTijeraToolStripMenuItem1.Text = "Piedra Papel Tijera";
+            this.piedraPapelTijeraToolStripMenuItem1.Click += new System.EventHandler(this.piedraPapelTijeraToolStripMenuItem1_Click);
             // 
             // scoresToolStripMenuItem
             // 
@@ -160,15 +180,27 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.background;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(927, 437);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 531);
+            this.ClientSize = new System.Drawing.Size(927, 461);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -177,6 +209,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,6 +232,9 @@
         private System.Windows.Forms.ToolStripMenuItem dosJugadoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem piedraPapelTijeraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem piedraPapelTijeraToolStripMenuItem1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
