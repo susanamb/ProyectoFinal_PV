@@ -185,6 +185,8 @@
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoJuegoToolStripMenuItem,
             this.cerrarToolStripMenuItem});
+            this.opcionesToolStripMenuItem.MergeAction = System.Windows.Forms.MergeAction.Insert;
+            this.opcionesToolStripMenuItem.MergeIndex = 1;
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.opcionesToolStripMenuItem.Text = "Opciones";

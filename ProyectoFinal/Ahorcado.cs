@@ -982,6 +982,11 @@ namespace ProyectoFinal
             ganador();
             button19.Enabled = false;
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
