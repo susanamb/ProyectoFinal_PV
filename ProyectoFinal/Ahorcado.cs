@@ -20,6 +20,73 @@ namespace ProyectoFinal
         public Ahorcado()
         {
             InitializeComponent();
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
+            button8.Enabled = false;
+            button9.Enabled = false;
+            button10.Enabled = false;
+            button11.Enabled = false;
+            button12.Enabled = false;
+            button13.Enabled = false;
+            button14.Enabled = false;
+            button15.Enabled = false;
+            button16.Enabled = false;
+            button17.Enabled = false;
+            button18.Enabled = false;
+            button19.Enabled = false;
+            button20.Enabled = false;
+            button21.Enabled = false;
+            button22.Enabled = false;
+            button23.Enabled = false;
+            button24.Enabled = false;
+            button25.Enabled = false;
+            button26.Enabled = false;
+            button27.Enabled = false;
+        }
+        private void ganador() {
+            int cont = 0;
+            for (int i = 0; i < lnes.Length; i++) {
+                if (lnes[i] != "__") {
+                    cont = cont + 1;
+                }
+            }
+            if (cont == lnes.Length) {
+                label1.Visible = false;
+                label2.Text = "Haz Ganado! :D";
+                label2.Visible = true;
+                button1.Enabled = false;
+                button2.Enabled = false;
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;
+                button6.Enabled = false;
+                button7.Enabled = false;
+                button8.Enabled = false;
+                button9.Enabled = false;
+                button10.Enabled = false;
+                button11.Enabled = false;
+                button12.Enabled = false;
+                button13.Enabled = false;
+                button14.Enabled = false;
+                button15.Enabled = false;
+                button16.Enabled = false;
+                button17.Enabled = false;
+                button18.Enabled = false;
+                button19.Enabled = false;
+                button20.Enabled = false;
+                button21.Enabled = false;
+                button22.Enabled = false;
+                button23.Enabled = false;
+                button24.Enabled = false;
+                button25.Enabled = false;
+                button26.Enabled = false;
+                button27.Enabled = false;
+            }
         }
         private void pic(int vidas)
         {
@@ -88,6 +155,7 @@ namespace ProyectoFinal
             pictureBox6.Visible = false;
 
             label2.Visible = false;
+            
         }
 
         private void button28_Click(object sender, EventArgs e)
@@ -105,10 +173,37 @@ namespace ProyectoFinal
             }
 
             label1.Text = string.Join(" ", lnes);
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
+            button10.Enabled = true;
+            button11.Enabled = true;
+            button12.Enabled = true;
+            button13.Enabled = true;
+            button14.Enabled = true;
+            button15.Enabled = true;
+            button16.Enabled = true;
+            button17.Enabled = true;
+            button18.Enabled = true;
+            button19.Enabled = true;
+            button20.Enabled = true;
+            button21.Enabled = true;
+            button22.Enabled = true;
+            button23.Enabled = true;
+            button24.Enabled = true;
+            button25.Enabled = true;
+            button26.Enabled = true;
+            button27.Enabled = true;
             button28.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//A
         {
 
             string palabra = label2.Text;
@@ -132,6 +227,7 @@ namespace ProyectoFinal
             }
             label1.Text = string.Join(" ", lnes);
             button1.Enabled = false;
+            ganador();
         }
 
 
@@ -157,11 +253,14 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+
             button4.Enabled = false;
+            ganador();
+
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//B
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -183,10 +282,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button2.Enabled = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//D
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -208,10 +309,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button3.Enabled = false;
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)//E
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -233,10 +336,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button8.Enabled = false;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)//F
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -258,10 +363,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button7.Enabled = false;
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)//G
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -286,7 +393,7 @@ namespace ProyectoFinal
             button6.Enabled = false;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)//H
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -308,10 +415,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button5.Enabled = false;
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void button16_Click(object sender, EventArgs e)//I
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -333,10 +442,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button16.Enabled = false;
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void button15_Click(object sender, EventArgs e)//J
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -358,10 +469,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button15.Enabled = false;
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void button14_Click(object sender, EventArgs e)//K
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -383,10 +496,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button14.Enabled = false;
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void button13_Click(object sender, EventArgs e)//L
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -408,10 +523,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button13.Enabled = false;
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e)//M
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -433,10 +550,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button12.Enabled = false;
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void button11_Click(object sender, EventArgs e)//N
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -458,10 +577,12 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
+
             button11.Enabled = false;
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)//O
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -483,10 +604,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button9.Enabled = false;
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        private void button24_Click(object sender, EventArgs e)//P
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -508,10 +630,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button24.Enabled = false;
         }
 
-        private void button23_Click(object sender, EventArgs e)
+        private void button23_Click(object sender, EventArgs e)//Q
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -533,10 +656,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button23.Enabled = false;
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        private void button22_Click(object sender, EventArgs e)//R
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -558,10 +682,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button22.Enabled = false;
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        private void button21_Click(object sender, EventArgs e)//S
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -583,10 +708,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button21.Enabled = false;
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        private void button20_Click(object sender, EventArgs e)///T
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -608,10 +734,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button20.Enabled = false;
         }
 
-        private void button19_Click(object sender, EventArgs e)
+        private void button19_Click(object sender, EventArgs e)//U
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -633,10 +760,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button19.Enabled = false;
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void button18_Click(object sender, EventArgs e)//V
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -658,10 +786,11 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button18.Enabled = false;
         }
 
-        private void button26_Click(object sender, EventArgs e)
+        private void button26_Click(object sender, EventArgs e)//Y
         {
             string palabra = label2.Text;
             bool flag = false;
@@ -683,6 +812,7 @@ namespace ProyectoFinal
                 pic(vidas);
             }
             label1.Text = string.Join(" ", lnes);
+            ganador();
             button26.Enabled = false;
         }
 
@@ -738,14 +868,119 @@ namespace ProyectoFinal
             {
                 lnes[i] = "__";
             }
-
+            
             label1.Text = string.Join(" ", lnes);
+            label1.Visible = true;
             button28.Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button27_Click(object sender, EventArgs e)//X
+        {
+            string palabra = label2.Text;
+            bool flag = false;
+            char[] word = palabra.ToCharArray();
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (word[i] == 'x')
+                {
+                    lnes[i] = " x";
+                    //label2.Visible = true;
+                    flag = true;
+
+                }
+            }
+            if (!flag)
+            {
+                vidas = vidas - 1;
+                pic(vidas);
+            }
+            label1.Text = string.Join(" ", lnes);
+            ganador();
+            button19.Enabled = false;
+        }
+
+        private void button17_Click(object sender, EventArgs e)//W
+        {
+            string palabra = label2.Text;
+            bool flag = false;
+            char[] word = palabra.ToCharArray();
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (word[i] == 'w')
+                {
+                    lnes[i] = " w";
+                    //label2.Visible = true;
+                    flag = true;
+
+                }
+            }
+            if (!flag)
+            {
+                vidas = vidas - 1;
+                pic(vidas);
+            }
+            label1.Text = string.Join(" ", lnes);
+            ganador();
+            button19.Enabled = false;
+        }
+
+        private void button25_Click(object sender, EventArgs e)//Z
+        {
+            string palabra = label2.Text;
+            bool flag = false;
+            char[] word = palabra.ToCharArray();
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (word[i] == 'z')
+                {
+                    lnes[i] = " z";
+                    //label2.Visible = true;
+                    flag = true;
+
+                }
+            }
+            if (!flag)
+            {
+                vidas = vidas - 1;
+                pic(vidas);
+            }
+            label1.Text = string.Join(" ", lnes);
+            ganador();
+            button19.Enabled = false;
+        }
+
+        private void button10_Click(object sender, EventArgs e)//ñ
+        {
+            string palabra = label2.Text;
+            bool flag = false;
+            char[] word = palabra.ToCharArray();
+
+            for (int i = 0; i < word.Length; i++)
+            {
+                if (word[i] == 'ñ')
+                {
+                    lnes[i] = " ñ";
+                    //label2.Visible = true;
+                    flag = true;
+
+                }
+            }
+            if (!flag)
+            {
+                vidas = vidas - 1;
+                pic(vidas);
+            }
+            label1.Text = string.Join(" ", lnes);
+            ganador();
+            button19.Enabled = false;
         }
     }
 

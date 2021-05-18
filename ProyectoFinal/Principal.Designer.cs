@@ -34,13 +34,15 @@
             this.verUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.juegosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ahorcadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.memoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.snakeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unJugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ahorcadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.memoriaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dosJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gatoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.scoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verScoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,40 +91,49 @@
             // juegosToolStripMenuItem
             // 
             this.juegosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ahorcadoToolStripMenuItem,
-            this.memoriaToolStripMenuItem,
-            this.snakeToolStripMenuItem,
-            this.gatoToolStripMenuItem});
+            this.unJugadorToolStripMenuItem,
+            this.dosJugadoresToolStripMenuItem});
             this.juegosToolStripMenuItem.Name = "juegosToolStripMenuItem";
             this.juegosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.juegosToolStripMenuItem.Text = "Juegos";
             // 
-            // ahorcadoToolStripMenuItem
+            // unJugadorToolStripMenuItem
             // 
-            this.ahorcadoToolStripMenuItem.Name = "ahorcadoToolStripMenuItem";
-            this.ahorcadoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ahorcadoToolStripMenuItem.Text = "Ahorcado";
-            this.ahorcadoToolStripMenuItem.Click += new System.EventHandler(this.ahorcadoToolStripMenuItem_Click);
+            this.unJugadorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ahorcadoToolStripMenuItem1,
+            this.memoriaToolStripMenuItem1});
+            this.unJugadorToolStripMenuItem.Name = "unJugadorToolStripMenuItem";
+            this.unJugadorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unJugadorToolStripMenuItem.Text = "Un jugador";
             // 
-            // memoriaToolStripMenuItem
+            // ahorcadoToolStripMenuItem1
             // 
-            this.memoriaToolStripMenuItem.Name = "memoriaToolStripMenuItem";
-            this.memoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.memoriaToolStripMenuItem.Text = "Memoria";
-            this.memoriaToolStripMenuItem.Click += new System.EventHandler(this.memoriaToolStripMenuItem_Click);
+            this.ahorcadoToolStripMenuItem1.Name = "ahorcadoToolStripMenuItem1";
+            this.ahorcadoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ahorcadoToolStripMenuItem1.Text = "Ahorcado";
+            this.ahorcadoToolStripMenuItem1.Click += new System.EventHandler(this.ahorcadoToolStripMenuItem1_Click);
             // 
-            // snakeToolStripMenuItem
+            // memoriaToolStripMenuItem1
             // 
-            this.snakeToolStripMenuItem.Name = "snakeToolStripMenuItem";
-            this.snakeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.snakeToolStripMenuItem.Text = "Snake";
+            this.memoriaToolStripMenuItem1.Name = "memoriaToolStripMenuItem1";
+            this.memoriaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.memoriaToolStripMenuItem1.Text = "Memoria";
+            this.memoriaToolStripMenuItem1.Click += new System.EventHandler(this.memoriaToolStripMenuItem1_Click);
             // 
-            // gatoToolStripMenuItem
+            // dosJugadoresToolStripMenuItem
             // 
-            this.gatoToolStripMenuItem.Name = "gatoToolStripMenuItem";
-            this.gatoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gatoToolStripMenuItem.Text = "Gato";
-            this.gatoToolStripMenuItem.Click += new System.EventHandler(this.gatoToolStripMenuItem_Click);
+            this.dosJugadoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gatoToolStripMenuItem1});
+            this.dosJugadoresToolStripMenuItem.Name = "dosJugadoresToolStripMenuItem";
+            this.dosJugadoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dosJugadoresToolStripMenuItem.Text = "Dos jugadores";
+            // 
+            // gatoToolStripMenuItem1
+            // 
+            this.gatoToolStripMenuItem1.Name = "gatoToolStripMenuItem1";
+            this.gatoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.gatoToolStripMenuItem1.Text = "Gato";
+            this.gatoToolStripMenuItem1.Click += new System.EventHandler(this.gatoToolStripMenuItem1_Click);
             // 
             // scoresToolStripMenuItem
             // 
@@ -135,14 +146,23 @@
             // verScoresToolStripMenuItem
             // 
             this.verScoresToolStripMenuItem.Name = "verScoresToolStripMenuItem";
-            this.verScoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verScoresToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.verScoresToolStripMenuItem.Text = "Ver puntajes";
             // 
             // ventanaToolStripMenuItem
             // 
+            this.ventanaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
             this.ventanaToolStripMenuItem.Name = "ventanaToolStripMenuItem";
             this.ventanaToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.ventanaToolStripMenuItem.Text = "Ventana";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // Principal
             // 
@@ -170,13 +190,15 @@
         private System.Windows.Forms.ToolStripMenuItem verUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem juegosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ahorcadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem memoriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem snakeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verScoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventanaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unJugadorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ahorcadoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem memoriaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem dosJugadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gatoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
 

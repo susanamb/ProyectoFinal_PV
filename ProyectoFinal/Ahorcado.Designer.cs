@@ -198,6 +198,7 @@
             this.button10.TabIndex = 14;
             this.button10.Text = "Ñ";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -281,6 +282,7 @@
             this.button17.TabIndex = 23;
             this.button17.Text = "W";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -376,6 +378,7 @@
             this.button25.TabIndex = 26;
             this.button25.Text = "Z";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -399,6 +402,7 @@
             this.button27.TabIndex = 24;
             this.button27.Text = "X";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // label1
             // 

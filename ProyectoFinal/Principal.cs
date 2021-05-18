@@ -17,16 +17,16 @@ namespace ProyectoFinal
             InitializeComponent();
         }
 
-        private void ahorcadoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ahorcadoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Ahorcado form1 = new Ahorcado();
-            form1.Text = "Ahorcado";
-            form1.WindowState = FormWindowState.Normal;
-            form1.MdiParent = this;
-            form1.Show();
+            Ahorcado form2 = new Ahorcado();
+            form2.Text = "Ahorcado";
+            form2.WindowState = FormWindowState.Normal;
+            form2.MdiParent = this;
+            form2.Show();
         }
 
-        private void gatoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void gatoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Gato form2 = new Gato();
             form2.Text = "Gato";
@@ -35,7 +35,7 @@ namespace ProyectoFinal
             form2.Show();
         }
 
-        private void memoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void memoriaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Memoria form2 = new Memoria();
             form2.Text = "Memoria";
@@ -43,5 +43,11 @@ namespace ProyectoFinal
             form2.MdiParent = this;
             form2.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
