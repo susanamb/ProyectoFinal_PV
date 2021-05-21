@@ -37,15 +37,18 @@ namespace ProyectoFinal
                 who = 'X';
             }
             if (button2.Text == button3.Text && button2.Text == button1.Text || button4.Text == button7.Text && button7.Text == button1.Text || button5.Text == button9.Text && button9.Text == button1.Text) {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
+                
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
             }
             else if (mov == 9) {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,8 +68,8 @@ namespace ProyectoFinal
             }
             if (button2.Text == button3.Text && button2.Text == button1.Text || button5.Text == button8.Text && button8.Text == button2.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -74,7 +77,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -94,8 +99,8 @@ namespace ProyectoFinal
             }
             if (button2.Text == button3.Text && button2.Text == button1.Text || button6.Text == button9.Text && button9.Text == button3.Text || button5.Text == button7.Text && button7.Text == button3.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -103,7 +108,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -123,8 +130,8 @@ namespace ProyectoFinal
             }
             if (button1.Text == button7.Text && button4.Text == button1.Text || button5.Text == button6.Text && button6.Text == button4.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -132,7 +139,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -152,8 +161,8 @@ namespace ProyectoFinal
             }
             if (button5.Text == button4.Text && button4.Text == button6.Text || button5.Text == button9.Text && button9.Text == button1.Text || button5.Text == button7.Text && button7.Text == button3.Text || button2.Text == button5.Text && button5.Text == button8.Text )
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -161,7 +170,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -181,8 +192,8 @@ namespace ProyectoFinal
             }
             if (button9.Text == button3.Text && button6.Text == button3.Text || button5.Text == button4.Text && button4.Text == button6.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -190,7 +201,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -210,8 +223,8 @@ namespace ProyectoFinal
             }
             if (button4.Text == button1.Text && button4.Text == button7.Text || button8.Text == button9.Text && button7.Text == button8.Text || button5.Text == button3.Text && button3.Text == button7.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -219,7 +232,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -239,8 +254,8 @@ namespace ProyectoFinal
             }
             if (button2.Text == button5.Text && button5.Text == button8.Text || button7.Text == button8.Text && button8.Text == button9.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -248,7 +263,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -268,8 +285,8 @@ namespace ProyectoFinal
             }
             if (button3.Text == button6.Text && button6.Text == button9.Text || button8.Text == button9.Text && button7.Text == button8.Text || button5.Text == button1.Text && button1.Text == button9.Text)
             {
-                if (who == 'X') { who = 'O'; }
-                else { who = 'X'; }
+                if (who == 'X') { who = 'O'; score = score - 50; }
+                else { who = 'X'; score = score + 100; }
                 string winner = "El ganador es " + who.ToString();
                 MessageBox.Show(winner, "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tableLayoutPanel1.Enabled = false;
@@ -277,7 +294,9 @@ namespace ProyectoFinal
             else if (mov == 9)
             {
                 MessageBox.Show("EMPATEEE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                score = score - 30;
             }
+            label2.Text = score.ToString();
         }
 
         private void nuevoJuegoToolStripMenuItem_Click(object sender, EventArgs e)
