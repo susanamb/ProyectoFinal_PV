@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gato));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -194,14 +195,14 @@
             // nuevoJuegoToolStripMenuItem
             // 
             this.nuevoJuegoToolStripMenuItem.Name = "nuevoJuegoToolStripMenuItem";
-            this.nuevoJuegoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoJuegoToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.nuevoJuegoToolStripMenuItem.Text = "Nuevo juego";
             this.nuevoJuegoToolStripMenuItem.Click += new System.EventHandler(this.nuevoJuegoToolStripMenuItem_Click);
             // 
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
@@ -212,6 +213,7 @@
             this.ClientSize = new System.Drawing.Size(661, 571);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Gato";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

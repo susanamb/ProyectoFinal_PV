@@ -113,6 +113,16 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_shido4 {
+            get {
+                object obj = ResourceManager.GetObject("logo shido4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paper {
             get {
                 object obj = ResourceManager.GetObject("paper", resourceCulture);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ppt));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,6 +49,8 @@
             this.dosJugadoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button7 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -169,7 +172,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.rps;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(408, 100);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(222, 204);
@@ -179,7 +182,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.rps;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(113, 100);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 204);
@@ -223,28 +226,28 @@
             // unJugadorToolStripMenuItem
             // 
             this.unJugadorToolStripMenuItem.Name = "unJugadorToolStripMenuItem";
-            this.unJugadorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unJugadorToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.unJugadorToolStripMenuItem.Text = "Nuevo";
             this.unJugadorToolStripMenuItem.Click += new System.EventHandler(this.unJugadorToolStripMenuItem_Click);
             // 
             // dosJugadoresToolStripMenuItem
             // 
             this.dosJugadoresToolStripMenuItem.Name = "dosJugadoresToolStripMenuItem";
-            this.dosJugadoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.dosJugadoresToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.dosJugadoresToolStripMenuItem.Text = "Un jugador";
             this.dosJugadoresToolStripMenuItem.Click += new System.EventHandler(this.dosJugadoresToolStripMenuItem_Click);
             // 
             // dosJugadoresToolStripMenuItem1
             // 
             this.dosJugadoresToolStripMenuItem1.Name = "dosJugadoresToolStripMenuItem1";
-            this.dosJugadoresToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dosJugadoresToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
             this.dosJugadoresToolStripMenuItem1.Text = "Dos jugadores";
             this.dosJugadoresToolStripMenuItem1.Click += new System.EventHandler(this.dosJugadoresToolStripMenuItem1_Click);
             // 
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
@@ -261,11 +264,33 @@
             this.button7.Visible = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(5, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 33);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "Score:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(71, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 33);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "0";
+            // 
             // ppt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(763, 401);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -281,6 +306,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ppt";
             this.Text = "ppt";
@@ -315,5 +341,7 @@
         private System.Windows.Forms.ToolStripMenuItem dosJugadoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cerrarToolStripMenuItem;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

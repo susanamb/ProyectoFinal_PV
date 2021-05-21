@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace ProyectoFinal
@@ -14,6 +8,8 @@ namespace ProyectoFinal
     {
         string[] words = { "tacos", "quesadillas", "pozole", "tostadas", "pastel", "menudo", "tortas", "burritos", "chilaquiles" };
         int vidas = 6;
+        int score = 0;
+        Stopwatch tm = new Stopwatch();
 
         string[] lnes = new string[20];
         Random random = new Random();
@@ -56,6 +52,7 @@ namespace ProyectoFinal
                 }
             }
             if (cont == lnes.Length) {
+                tm.Stop();
                 label1.Visible = false;
                 label2.Text = "Haz Ganado! :D";
                 label2.Visible = true;
@@ -86,32 +83,48 @@ namespace ProyectoFinal
                 button25.Enabled = false;
                 button26.Enabled = false;
                 button27.Enabled = false;
+
+                int ts = 60 - Convert.ToInt32(label7.Text);
+                score = score + ts;
+                string tscore = " + " + ts.ToString() + " x tiempo";
+                label9.Text = tscore;
+                label9.Visible = true;
+                
             }
+
+            label4.Text = score.ToString();
         }
         private void pic(int vidas)
         {
             if (vidas == 5)
             {
                 pictureBox1.Visible = true;
+                score = score - 30;
             }
             else if (vidas == 4)
             {
                 pictureBox2.Visible = true;
+                score = score - 35;
             }
             else if (vidas == 3)
             {
                 pictureBox3.Visible = true;
+                score = score - 40;
             }
+
             else if (vidas == 2)
             {
                 pictureBox4.Visible = true;
+                score = score - 45;
             }
             else if (vidas == 1)
             {
                 pictureBox5.Visible = true;
+                score = score - 50;
             }
             else if (vidas == 0)
             {
+                score = score - 55;
                 pictureBox6.Visible = true;
                 label1.Visible = false;
                 label2.Text = "Haz Perdido!";
@@ -165,7 +178,9 @@ namespace ProyectoFinal
             label2.Text = palabra;
             label2.Visible = false;
             char[] word = palabra.ToCharArray();
-
+            tm.Start();
+            timer1.Enabled = true;
+            label9.Visible = false;
 
             for (int i = 0; i < word.Length; i++)
             {
@@ -215,6 +230,8 @@ namespace ProyectoFinal
                 if (word[i] == 'a')
                 {
                     lnes[i] = " a";
+                    score = score + 100;
+
                     //label2.Visible = true;
                     flag = true;
 
@@ -241,6 +258,8 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'c')
                 {
+                    score = score + 100;
+
                     lnes[i] = " c";
                     //label2.Visible = true;
                     flag = true;
@@ -270,6 +289,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'b')
                 {
+                    score = score + 100;
                     lnes[i] = " b";
                     //label2.Visible = true;
                     flag = true;
@@ -297,6 +317,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'd')
                 {
+                    score = score + 100;
                     lnes[i] = " d";
                     //label2.Visible = true;
                     flag = true;
@@ -324,6 +345,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'e')
                 {
+                    score = score + 100;
                     lnes[i] = " e";
                     //label2.Visible = true;
                     flag = true;
@@ -351,6 +373,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'f')
                 {
+                    score = score + 100;
                     lnes[i] = " f";
                     //label2.Visible = true;
                     flag = true;
@@ -379,6 +402,7 @@ namespace ProyectoFinal
                 if (word[i] == 'g')
                 {
                     lnes[i] = " g";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -403,6 +427,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'h')
                 {
+                    score = score + 100;
                     lnes[i] = " h";
                     //label2.Visible = true;
                     flag = true;
@@ -430,6 +455,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'i')
                 {
+                    score = score + 100;
                     lnes[i] = " i";
                     //label2.Visible = true;
                     flag = true;
@@ -457,6 +483,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'j')
                 {
+                    score = score + 100;
                     lnes[i] = " j";
                     //label2.Visible = true;
                     flag = true;
@@ -484,6 +511,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'k')
                 {
+                    score = score + 100;
                     lnes[i] = " k";
                     //label2.Visible = true;
                     flag = true;
@@ -511,6 +539,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'l')
                 {
+                    score = score + 100;
                     lnes[i] = " l";
                     //label2.Visible = true;
                     flag = true;
@@ -538,6 +567,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'm')
                 {
+                    score = score + 100;
                     lnes[i] = " m";
                     //label2.Visible = true;
                     flag = true;
@@ -565,6 +595,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'n')
                 {
+                    score = score + 100;
                     lnes[i] = " n";
                     //label2.Visible = true;
                     flag = true;
@@ -592,6 +623,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'o')
                 {
+                    score = score + 100;
                     lnes[i] = " o";
                     //label2.Visible = true;
                     flag = true;
@@ -618,6 +650,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'p')
                 {
+                    score = score + 100;
                     lnes[i] = " p";
                     //label2.Visible = true;
                     flag = true;
@@ -645,6 +678,7 @@ namespace ProyectoFinal
                 if (word[i] == 'q')
                 {
                     lnes[i] = " q";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -670,6 +704,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'r')
                 {
+                    score = score + 100;
                     lnes[i] = " r";
                     //label2.Visible = true;
                     flag = true;
@@ -697,6 +732,7 @@ namespace ProyectoFinal
                 if (word[i] == 's')
                 {
                     lnes[i] = " s";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -722,6 +758,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 't')
                 {
+                    score = score + 100;
                     lnes[i] = " t";
                     //label2.Visible = true;
                     flag = true;
@@ -749,6 +786,7 @@ namespace ProyectoFinal
                 if (word[i] == 'u')
                 {
                     lnes[i] = " u";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -775,6 +813,7 @@ namespace ProyectoFinal
                 if (word[i] == 'v')
                 {
                     lnes[i] = " v";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -801,6 +840,7 @@ namespace ProyectoFinal
                 if (word[i] == 'y')
                 {
                     lnes[i] = " y";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -823,6 +863,9 @@ namespace ProyectoFinal
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            score = 0;
+            label4.Text = score.ToString();
+            label9.Visible = false;
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
@@ -862,6 +905,7 @@ namespace ProyectoFinal
             string palabra = words[num];
             label2.Text = palabra;
             char[] word = palabra.ToCharArray();
+            tm.Start();
 
 
             for (int i = 0; i < word.Length; i++)
@@ -890,6 +934,7 @@ namespace ProyectoFinal
                 if (word[i] == 'x')
                 {
                     lnes[i] = " x";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -915,6 +960,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'w')
                 {
+                    score = score + 100;
                     lnes[i] = " w";
                     //label2.Visible = true;
                     flag = true;
@@ -941,6 +987,7 @@ namespace ProyectoFinal
             {
                 if (word[i] == 'z')
                 {
+                    score = score + 100;
                     lnes[i] = " z";
                     //label2.Visible = true;
                     flag = true;
@@ -968,6 +1015,7 @@ namespace ProyectoFinal
                 if (word[i] == 'ñ')
                 {
                     lnes[i] = " ñ";
+                    score = score + 100;
                     //label2.Visible = true;
                     flag = true;
 
@@ -986,6 +1034,13 @@ namespace ProyectoFinal
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan ts = new TimeSpan(0, 0, 0, 0, (int)tm.ElapsedMilliseconds);
+            label7.Text = ts.Seconds.ToString();
+            label5.Text = ts.Milliseconds.ToString();
         }
     }
 

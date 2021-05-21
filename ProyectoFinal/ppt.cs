@@ -16,6 +16,7 @@ namespace ProyectoFinal
         bool player = true;
         string j1;
         string j2;
+        int score = 0;
 
         public ppt()
         {
@@ -128,15 +129,19 @@ namespace ProyectoFinal
 
         private void ganador() {
             if (j1 == "piedra" && j2 == "tijera" || j1 == "papel" && j2 == "piedra" || j1 == "tijera" && j2 == "papel") {
+                score = score + 100;
                 MessageBox.Show("GANA JUGADOR 1", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else if (j1 == j2)
             {
+                score = score + 50;
                 MessageBox.Show("EMPATE", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else {
+                score = score - 50;
                 MessageBox.Show("GANA JUGADOR 2", "FIN", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            label7.Text = score.ToString();
             button7.Visible = true;
             pictureBox1.Image = global::ProyectoFinal.Properties.Resources.rps;
             pictureBox2.Image = global::ProyectoFinal.Properties.Resources.rps;

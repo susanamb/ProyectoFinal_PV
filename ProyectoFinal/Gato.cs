@@ -14,6 +14,8 @@ namespace ProyectoFinal
     {
         char who = 'X';
         int mov = 0;
+        int score = 0;
+
         public Gato()
         {
             InitializeComponent();

@@ -19,7 +19,6 @@ namespace ProyectoFinal
 
         private void ahorcadoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
             Ahorcado form2 = new Ahorcado();
             form2.Text = "Ahorcado";
             form2.WindowState = FormWindowState.Normal;
@@ -29,7 +28,6 @@ namespace ProyectoFinal
 
         private void gatoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
             Gato form2 = new Gato();
             form2.Text = "Gato";
             form2.WindowState = FormWindowState.Normal;
@@ -39,7 +37,6 @@ namespace ProyectoFinal
 
         private void memoriaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
             Memoria form2 = new Memoria();
             form2.Text = "Memoria";
             form2.WindowState = FormWindowState.Normal;
@@ -54,7 +51,6 @@ namespace ProyectoFinal
 
         private void piedraPapelTijeraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
             ppt form2 = new ppt();
             form2.Text = "Piedra Papel Tijera";
             form2.WindowState = FormWindowState.Normal;
@@ -64,12 +60,16 @@ namespace ProyectoFinal
 
         private void piedraPapelTijeraToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
             ppt form2 = new ppt();
             form2.Text = "Piedra Papel Tijera";
             form2.WindowState = FormWindowState.Normal;
             form2.MdiParent = this;
             form2.Show();
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
